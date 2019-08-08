@@ -12,7 +12,7 @@ public class Start {
         l.setEditora("Foundation for Inner Peace");
         l.setValor(160,00);
         l.exibir();
-        l.Venda(200);
+        l.Venda(200); 
     }
     
 }
