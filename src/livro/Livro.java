@@ -4,7 +4,7 @@ package livro;
 public class Livro {
     private String titulo;
     private String autor;
-    private String isbn;
+    private int isbn;
     private int qtdPaginas;
     private int ano;
     private String editora;
@@ -26,11 +26,11 @@ public class Livro {
         this.autor = autor;
     }
 
-    public String getIsbn() {
+    public int getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(String isbn) {
+    public void setIsbn(int isbn) {
         this.isbn = isbn;
     }
 
@@ -66,5 +66,14 @@ public class Livro {
         this.valor = valor;
     }
     
+    public double Venda(int qtd){
+    return (qtd * valor);
+    }
+    
+    public String exibir(){
+    return "O livro "+this.titulo+" escrito pelo autor "+this.autor+"\n"
+            + " foi escrito em "+this.ano+", editora: "+this.editora+" isbn: "+this.isbn+" valor: "+Double.toString(this.valor)+"\n"
+            + "Quantidade de páginas: "+Integer.toString(this.qtdPaginas);
+    }
     
 }
