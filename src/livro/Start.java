@@ -10,9 +10,9 @@ public class Start {
         l.setQtdPaginas(1454);
         l.setAno(2018);
         l.setEditora("Foundation for Inner Peace");
-        l.setValor(160,00);
-        l.exibir();
-        l.Venda(200); 
+        l.setValor(160.00);
+        System.out.println(l.exibir());
+        System.out.println(l.Venda(200)); 
     }
     
 }
